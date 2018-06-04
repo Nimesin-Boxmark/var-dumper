@@ -19,14 +19,6 @@ if (!function_exists('dump')) {
     {
         VarDumper::dump($var);
 
-        foreach ($moreVars as $var) {
-            VarDumper::dump($var);
-        }
-
-        if (1 < func_num_args()) {
-            return func_get_args();
-        }
-
         return $var;
     }
 }
@@ -36,9 +28,6 @@ if (!function_exists('dd')) {
     {
         VarDumper::dump($var);
 
-        foreach ($moreVars as $var) {
-            VarDumper::dump($var);
-        }
 
         exit(1);
     }
