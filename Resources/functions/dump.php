@@ -15,7 +15,7 @@ if (!function_exists('dump')) {
     /**
      * @author Nicolas Grekas <p@tchwork.com>
      */
-    function dump($var, ...$moreVars)
+    function dump($var)
     {
         VarDumper::dump($var);
 
@@ -32,7 +32,7 @@ if (!function_exists('dump')) {
 }
 
 if (!function_exists('dd')) {
-    function dd($var, ...$moreVars)
+    function dd($var)
     {
         VarDumper::dump($var);
 
